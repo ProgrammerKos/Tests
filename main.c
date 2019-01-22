@@ -1,16 +1,16 @@
+float CalculateY(int x) {
+    float y;
+    if (x == 0){
+        y = 8;}
+    else if (x < 5){
+        y = x + 5;
+        y = y / (x * x);}
+    else if (x >= 5){
+        y = x * x;}
+    return y;}
 int main(){
-    float y; int x;
+    int x;
     for (int i = -5; i <= 10; i++){
         x = i;
-        if (x == 0){
-        printf("0 : infinity\n");}
-        else if (x < 5){
-            y = x + 5;
-            y = y / (x * x);
-            printf("%d : %f", x, y);
-            printf("\n");}
-        else if (x >= 5){
-            y = x * x;
-            printf("%d : %f", x, y);
-            printf("\n");}}
+        printf("%d : %f\n", x, CalculateY(x));}
 return 0; }
