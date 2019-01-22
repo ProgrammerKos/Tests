@@ -1,7 +1,8 @@
+#include <math.h>
 float CalculateY(int x) {
     float y;
     if (x == 0){
-        y = 8;}
+        y = NAN;}
     else if (x < 5){
         y = x + 5;
         y = y / (x * x);}
